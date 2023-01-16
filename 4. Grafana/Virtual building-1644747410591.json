@@ -1,0 +1,1498 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "target": {
+          "limit": 100,
+          "matchAny": false,
+          "tags": [],
+          "type": "dashboard"
+        },
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": 1,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "description": "It is the inner temperature referred to every single room of the school.",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisGridShow": true,
+            "axisLabel": "",
+            "axisPlacement": "left",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "linear",
+            "lineStyle": {
+              "fill": "solid"
+            },
+            "lineWidth": 1,
+            "pointSize": 1,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 0,
+        "y": 0
+      },
+      "id": 2,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "table",
+          "placement": "right"
+        },
+        "tooltip": {
+          "mode": "single"
+        }
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "H84Uz_-7k"
+          },
+          "groupBy": [],
+          "hide": false,
+          "measurement": "Dashboard",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "Temperature of Zone 1 [C]"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "H84Uz_-7k"
+          },
+          "groupBy": [],
+          "hide": false,
+          "measurement": "Dashboard",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "B",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "Temperature of Zone 2 [C]"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "H84Uz_-7k"
+          },
+          "groupBy": [],
+          "hide": false,
+          "measurement": "Dashboard",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "C",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "Temperature of Zone 3 [C]"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "H84Uz_-7k"
+          },
+          "groupBy": [],
+          "hide": false,
+          "measurement": "Dashboard",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "D",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "Temperature of Zone 4 [C]"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "H84Uz_-7k"
+          },
+          "groupBy": [],
+          "hide": false,
+          "measurement": "Dashboard",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "E",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "Temperature of Zone 5 [C]"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "H84Uz_-7k"
+          },
+          "groupBy": [],
+          "hide": false,
+          "measurement": "Dashboard",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "F",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "Temperature of Zone 6 [C]"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "H84Uz_-7k"
+          },
+          "groupBy": [],
+          "hide": false,
+          "measurement": "Dashboard",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "G",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "Temperature of Zone 7 [C]"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "H84Uz_-7k"
+          },
+          "groupBy": [],
+          "hide": false,
+          "measurement": "Dashboard",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "H",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "Temperature of Zone 8 [C]"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "H84Uz_-7k"
+          },
+          "groupBy": [],
+          "hide": false,
+          "measurement": "Dashboard",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "I",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "Temperature of Zone 9 [C]"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "H84Uz_-7k"
+          },
+          "groupBy": [],
+          "hide": false,
+          "measurement": "Dashboard",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "J",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "Temperature of Zone 10 [C]"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "H84Uz_-7k"
+          },
+          "groupBy": [],
+          "hide": false,
+          "measurement": "Dashboard",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "K",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "Temperature of Zone 11 [C]"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "H84Uz_-7k"
+          },
+          "groupBy": [],
+          "hide": false,
+          "measurement": "Dashboard",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "L",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "Temperature of Zone 12 [C]"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": []
+        }
+      ],
+      "title": "Indoor temperature for each room [°C]",
+      "transparent": true,
+      "type": "timeseries"
+    },
+    {
+      "description": "It is the mean indoor temperature referred to the shool on its whole.",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "continuous-BlYlRd",
+            "seriesBy": "min"
+          },
+          "custom": {
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 1,
+            "drawStyle": "bars",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "linear",
+            "lineWidth": 3,
+            "pointSize": 1,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "__systemRef": "hideSeriesFrom",
+            "matcher": {
+              "id": "byNames",
+              "options": {
+                "mode": "exclude",
+                "names": [
+                  "Dashboard.Mean inner Temperature [C]"
+                ],
+                "prefix": "All except:",
+                "readOnly": true
+              }
+            },
+            "properties": [
+              {
+                "id": "custom.hideFrom",
+                "value": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": true
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 12,
+        "y": 0
+      },
+      "id": 3,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "table",
+          "placement": "right"
+        },
+        "tooltip": {
+          "mode": "single"
+        }
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "H84Uz_-7k"
+          },
+          "groupBy": [],
+          "hide": false,
+          "measurement": "Dashboard",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "Mean inner Temperature [C]"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": []
+        }
+      ],
+      "title": "Mean indoor temperature for the school [°C]",
+      "transparent": true,
+      "type": "timeseries"
+    },
+    {
+      "description": "It is the total power consumption registered in reference to each room.",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic",
+            "seriesBy": "min"
+          },
+          "custom": {
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 1,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 0,
+        "y": 9
+      },
+      "id": 4,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "table",
+          "placement": "right"
+        },
+        "tooltip": {
+          "mode": "single"
+        }
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "H84Uz_-7k"
+          },
+          "groupBy": [],
+          "hide": false,
+          "measurement": "Dashboard",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "Total conumption room 1 [W]"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "H84Uz_-7k"
+          },
+          "groupBy": [],
+          "hide": false,
+          "measurement": "Dashboard",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "B",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "Total conumption room 2 [W]"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "H84Uz_-7k"
+          },
+          "groupBy": [],
+          "hide": false,
+          "measurement": "Dashboard",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "C",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "Total conumption room 3 [W]"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "H84Uz_-7k"
+          },
+          "groupBy": [],
+          "hide": false,
+          "measurement": "Dashboard",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "D",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "Total conumption room 4 [W]"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "H84Uz_-7k"
+          },
+          "groupBy": [],
+          "hide": false,
+          "measurement": "Dashboard",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "E",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "Total conumption room 5 [W]"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "H84Uz_-7k"
+          },
+          "groupBy": [],
+          "hide": false,
+          "measurement": "Dashboard",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "F",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "Total conumption room 6 [W]"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "H84Uz_-7k"
+          },
+          "groupBy": [],
+          "hide": false,
+          "measurement": "Dashboard",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "G",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "Total conumption room 7 [W]"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "H84Uz_-7k"
+          },
+          "groupBy": [],
+          "hide": false,
+          "measurement": "Dashboard",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "H",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "Total conumption room 8 [W]"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "H84Uz_-7k"
+          },
+          "groupBy": [],
+          "hide": false,
+          "measurement": "Dashboard",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "I",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "Total conumption room 9 [W]"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "H84Uz_-7k"
+          },
+          "groupBy": [],
+          "hide": false,
+          "measurement": "Dashboard",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "J",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "Total conumption room 10 [W]"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "H84Uz_-7k"
+          },
+          "groupBy": [],
+          "hide": false,
+          "measurement": "Dashboard",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "K",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "Total conumption room 11 [W]"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "H84Uz_-7k"
+          },
+          "groupBy": [],
+          "hide": false,
+          "measurement": "Dashboard",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "L",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "Total conumption room 12 [W]"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": []
+        }
+      ],
+      "title": "Power consumption for each room [W]",
+      "transparent": true,
+      "type": "timeseries"
+    },
+    {
+      "description": "It is the predicted consumption value for the whole building.",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic",
+            "seriesBy": "min"
+          },
+          "custom": {
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "bars",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "linear",
+            "lineWidth": 3,
+            "pointSize": 1,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 12,
+        "y": 9
+      },
+      "id": 5,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "table",
+          "placement": "right"
+        },
+        "tooltip": {
+          "mode": "single"
+        }
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "H84Uz_-7k"
+          },
+          "groupBy": [],
+          "hide": false,
+          "measurement": "Predictions",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "Q [J](Hourly)"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": []
+        }
+      ],
+      "title": "Predicted consumption for the whole school [W]",
+      "transparent": true,
+      "type": "timeseries"
+    },
+    {
+      "description": "It is the real temperature of the children bathroom compared to the predicted values for it.",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "continuous-RdYlGr",
+            "seriesBy": "last"
+          },
+          "custom": {
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": -1,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 1,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 0,
+        "y": 18
+      },
+      "id": 6,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "table",
+          "placement": "right"
+        },
+        "tooltip": {
+          "mode": "single"
+        }
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "H84Uz_-7k"
+          },
+          "groupBy": [],
+          "hide": false,
+          "measurement": "Predictions",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "GROUND:ZONE4:Zone Operative Temperature [C](Hourly:ON)"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "H84Uz_-7k"
+          },
+          "groupBy": [],
+          "hide": false,
+          "measurement": "Dashboard",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "B",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "Temperature of Zone 4 [C]"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": []
+        }
+      ],
+      "title": "Indoor temperature for the children bathroom compared to predictions [°C]",
+      "transparent": true,
+      "type": "timeseries"
+    },
+    {
+      "description": "It is the real temperature of the internal classroom compared to the predicted values for it.",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "continuous-RdYlGr",
+            "seriesBy": "last"
+          },
+          "custom": {
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 1,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 12,
+        "y": 18
+      },
+      "id": 9,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "table",
+          "placement": "right"
+        },
+        "tooltip": {
+          "mode": "single"
+        }
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "H84Uz_-7k"
+          },
+          "groupBy": [],
+          "hide": false,
+          "measurement": "Predictions",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "GROUND:ZONE9:Zone Operative Temperature [C](Hourly:ON)"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "H84Uz_-7k"
+          },
+          "groupBy": [],
+          "hide": false,
+          "measurement": "Dashboard",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "B",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "Temperature of Zone 9 [C]"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": []
+        }
+      ],
+      "title": "Indoor temperature for the internal classroom compared to predictions [°C]",
+      "transparent": true,
+      "type": "timeseries"
+    },
+    {
+      "description": "It is the real temperature of the lateral classroom compared to the predicted values for it.",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "continuous-RdYlGr",
+            "seriesBy": "last"
+          },
+          "custom": {
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 1,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 0,
+        "y": 27
+      },
+      "id": 8,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "table",
+          "placement": "right"
+        },
+        "tooltip": {
+          "mode": "single"
+        }
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "H84Uz_-7k"
+          },
+          "groupBy": [],
+          "hide": false,
+          "measurement": "Predictions",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "GROUND:ZONE2:Zone Operative Temperature [C](Hourly:ON)"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "H84Uz_-7k"
+          },
+          "groupBy": [],
+          "hide": false,
+          "measurement": "Dashboard",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "B",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "Temperature of Zone 2 [C]"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": []
+        }
+      ],
+      "title": "Indoor temperature for the lateral classroom compared to predictions [°C]",
+      "transparent": true,
+      "type": "timeseries"
+    },
+    {
+      "description": "It is the real temperature of the corridor compared to the predicted values for it.",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "continuous-RdYlGr",
+            "seriesBy": "last"
+          },
+          "custom": {
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 1,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 12,
+        "y": 27
+      },
+      "id": 7,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "table",
+          "placement": "right"
+        },
+        "tooltip": {
+          "mode": "single"
+        }
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "H84Uz_-7k"
+          },
+          "groupBy": [],
+          "hide": false,
+          "measurement": "Predictions",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "GROUND:ZONE10:Zone Operative Temperature [C](Hourly:ON)"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": []
+        },
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "H84Uz_-7k"
+          },
+          "groupBy": [],
+          "hide": false,
+          "measurement": "Dashboard",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "B",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "Temperature of Zone 10 [C]"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": []
+        }
+      ],
+      "title": "Indoor temperature for the corridor compared to predictions [°C]",
+      "transparent": true,
+      "type": "timeseries"
+    }
+  ],
+  "refresh": false,
+  "schemaVersion": 34,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "2021-12-31T23:00:00.000Z",
+    "to": "2022-01-02T22:59:59.000Z"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "Virtual building",
+  "uid": "HEeyzlank",
+  "version": 18,
+  "weekStart": ""
+}
